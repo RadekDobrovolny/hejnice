@@ -16,4 +16,3 @@ Jednodenní setkání u lavičky. Poslední zimní víkend! Co by na to řekl Am
 ## Doprava
 - spolujízda z Prahy
 - vlakem do Ústí nad Orlicí (pak shuttle)
-
