@@ -1,17 +1,98 @@
 ---
+import "../styles/global.css";
+import { getEntry } from "astro:content";
 
+const event = await getEntry("events", "meetup");
+const { Content } = await event.render();
+
+const res = await fetch(new URL("/api/participants", Astro.url));
+const initialParticipants = res.ok ? await res.json() : [];
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+<html lang="cs">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{event.data.title}</title>
+  </head>
+
+  <body>
+    <h1>{event.data.title}</h1>
+    <p class="muted">{event.data.date} • {event.data.time} • {event.data.location}</p>
+    <Content />
+
+    <div>
+      <h2>Účastníci</h2>
+      <div id="participants" class="participants-grid">
+        {initialParticipants.map((p) => (
+          <div class="participant">
+            <div class="participant-avatar">{p.name.charAt(0).toUpperCase()}</div>
+            <div class="participant-name">{p.name}</div>
+          </div>
+        ))}
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Přihlášení</h2>
+      <form id="signup-form">
+        <input id="name" name="name" placeholder="Tvoje jméno" minlength="2" maxlength="60" required />
+        <button type="submit">Přihlásit</button>
+      </form>
+      <p id="msg" class="error" aria-live="polite"></p>
+      <p class="note">Rozmyslel*a sis to? Napiš Radkovi, odebere tě</p>
+    </div>
+
+    <script>
+      const form = document.getElementById("signup-form");
+      const list = document.getElementById("participants");
+      const msg = document.getElementById("msg");
+      const input = document.getElementById("name");
+
+      function render(participants) {
+        list.innerHTML = "";
+        for (const p of participants) {
+          const div = document.createElement("div");
+          div.className = "participant";
+          div.innerHTML = `
+            <div class="participant-avatar">${p.name.charAt(0).toUpperCase()}</div>
+            <div class="participant-name">${p.name}</div>
+          `;
+          list.appendChild(div);
+        }
+      }
+
+      form.addEventListener("submit", async (e) => {
+        e.preventDefault();
+        msg.textContent = "";
+
+        const name = input.value.trim();
+        if (name.length < 2) {
+          msg.textContent = "Zadej prosím jméno (aspoň 2 znaky).";
+          return;
+        }
+
+        try {
+          const res = await fetch("/api/participants", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ name }),
+          });
+
+          const data = await res.json();
+
+          if (!res.ok) {
+            msg.textContent = data?.error || "Něco se pokazilo.";
+            return;
+          }
+
+          render(data);
+          input.value = "";
+          input.focus();
+        } catch (err) {
+          msg.textContent = "Nepodařilo se odeslat přihlášku.";
+        }
+      });
+    </script>
+  </body>
 </html>
