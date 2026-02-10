@@ -4,9 +4,6 @@ import { getEntry } from "astro:content";
 
 const event = await getEntry("events", "meetup");
 const { Content } = await event.render();
-
-const res = await fetch(new URL("/api/participants", Astro.url));
-const initialParticipants = res.ok ? await res.json() : [];
 ---
 
 <html lang="cs">
@@ -23,14 +20,7 @@ const initialParticipants = res.ok ? await res.json() : [];
 
     <div>
       <h2>Účastníci</h2>
-      <div id="participants" class="participants-grid">
-        {initialParticipants.map((p) => (
-          <div class="participant">
-            <div class="participant-avatar">{p.name.charAt(0).toUpperCase()}</div>
-            <div class="participant-name">{p.name}</div>
-          </div>
-        ))}
-      </div>
+      <div id="participants" class="participants-grid"></div>
     </div>
 
     <div class="card">
@@ -44,10 +34,27 @@ const initialParticipants = res.ok ? await res.json() : [];
     </div>
 
     <script>
+      import PocketBase from "pocketbase";
+
+      const POCKETBASE_URL = "https://pocketbase.hippou.cz";
+      const pb = new PocketBase(POCKETBASE_URL);
+
       const form = document.getElementById("signup-form");
       const list = document.getElementById("participants");
       const msg = document.getElementById("msg");
       const input = document.getElementById("name");
+
+      async function loadParticipants() {
+        try {
+          const records = await pb.collection("participants").getFullList({
+            sort: "-created",
+            fields: "id,name,created",
+          });
+          render(records);
+        } catch (err) {
+          console.error("Failed to load participants:", err);
+        }
+      }
 
       function render(participants) {
         list.innerHTML = "";
@@ -73,26 +80,17 @@ const initialParticipants = res.ok ? await res.json() : [];
         }
 
         try {
-          const res = await fetch("/api/participants", {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ name }),
-          });
-
-          const data = await res.json();
-
-          if (!res.ok) {
-            msg.textContent = data?.error || "Něco se pokazilo.";
-            return;
-          }
-
-          render(data);
+          await pb.collection("participants").create({ name });
+          await loadParticipants();
           input.value = "";
           input.focus();
         } catch (err) {
           msg.textContent = "Nepodařilo se odeslat přihlášku.";
+          console.error(err);
         }
       });
+
+      loadParticipants();
     </script>
   </body>
 </html>
