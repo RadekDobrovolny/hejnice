@@ -39,7 +39,16 @@ h1 {
 
 form {
   display: flex;
+  flex-wrap: wrap;
   gap: 10px;
+}
+
+form input {
+  min-width: 0;
+}
+
+form button {
+  white-space: nowrap;
 }
 
 input {
