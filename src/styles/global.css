@@ -92,6 +92,7 @@ ul {
   margin: 16px 0 0;
   padding-left: 24px;
   color: #fff;
+  list-style: none;
 }
 
 ul li {
@@ -171,4 +172,8 @@ h2 {
   margin-bottom: 3rem;
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
   text-align: center;
+}
+
+li::first-letter {
+  font-size: 1.4em;
 }
