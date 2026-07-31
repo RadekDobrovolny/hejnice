@@ -12,7 +12,7 @@ contact:
   phone: "+420 723 879 213"
 ---
 
-Kolik měl Alibaba loupežníků v partě? Kolik dní pršelo při biblické potopě? Kolik procent má prémiový eidam? Kolik týdnů trvá průměrné těhotenství? Jaké protonové číslo má zirkonium? Kolik dní kape Medardova kápě? A co římané viděli za písmeny XL?
+Kolik měl Alibaba loupežníků v partě? Kolik dní pršelo při biblické potopě? Kolik procent má prémiový eidam? Kolik týdnů trvá průměrné těhotenství? Jaké protonové číslo má zirkonium? Kolik dní kape Medardova kápě? A co Římané viděli za písmeny XL?
 
 Odpověď na všechny tyto otázky se dozvíte na snad už tradiční oslavě narozenin v Hejnicích.
 
