@@ -18,11 +18,11 @@ body {
 }
 
 body.theme-late-summer {
-  --page-background: linear-gradient(135deg, #4c7a46 0%, #d5a84f 52%, #8a4b59 100%);
-  --accent: #6f7f34;
-  --accent-soft: #d39a43;
-  --accent-shadow: rgba(111, 127, 52, 0.35);
-  --accent-shadow-strong: rgba(111, 127, 52, 0.55);
+  --page-background: linear-gradient(135deg, #2f8f4e 0%, #f0b84f 48%, #b24362 100%);
+  --accent: #477f2e;
+  --accent-soft: #f0a43c;
+  --accent-shadow: rgba(71, 127, 46, 0.38);
+  --accent-shadow-strong: rgba(71, 127, 46, 0.58);
 }
 
 body.theme-index {
@@ -192,8 +192,8 @@ h2 {
 }
 
 .event-card.theme-late-summer {
-  --card-accent: #6f7f34;
-  --card-accent-soft: #d39a43;
+  --card-accent: #477f2e;
+  --card-accent-soft: #f0a43c;
 }
 
 .event-card:hover {
