@@ -17,10 +17,12 @@ Na všechny tyto otázky se dozvíte odpověď na, snad už, tradiční oslavě 
 
 Letos budeme mít k dispozici chalupu přímo v obci. Je tam 6 lůžek, moderní koupelna a splachovací záchod. Na zahradě je rovinka, kde by šel případně i postavit stan. [Mrkněte na fotky](https://www.e-chalupy.cz/ubytovani-hejnice-u-zamberka-chalupa-pronajem-o10675).
 
+Přijďte na chvilku anebo na celý víkend. Pokud budete chtít přespat v chalupě a finanční situace vám to dovolí, budu rád za příspěvek na ubytko. Pokud budete chtít vzít děti anebo pejska, dejte mi vědět.
+
 ## Program
 
 ### Pátek (od 17:00)
-- posezení u ohně, táborák, povídání a zpívání
+- posezení u ohně, opékání, povídání a zpívání
 
 ### Sobota
 - vaření na ohni
