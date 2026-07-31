@@ -20,6 +20,8 @@ Letos budeme mít k dispozici chalupu přímo v obci. Je tam 6 míst na spaní, 
 
 Přijďte na chvilku anebo na celý víkend. Pokud budete chtít přespat v chalupě a finanční situace vám to dovolí, budu rád za příspěvek na ubytko. Pokud budete chtít vzít děti anebo pejska, dejte mi vědět.
 
+Jste srdečně zváni a moc se na vás těším! <span class="emoji">❤️</span>️
+
 ## Program
 
 ### Pátek (od 17:00)
