@@ -14,9 +14,9 @@ contact:
 
 Kolik měl Alibaba loupežníků v partě? Kolik dní pršelo při biblické potopě? Kolik procent má prémiový eidam? Kolik týdnů trvá průměrné těhotenství? Jaké protonové číslo má zirkonium? Kolik dní kape Medardova kápě? A co římané viděli za písmeny XL?
 
-Na všechny tyto otázky se dozvíte odpověď na, snad už, tradiční oslavě v Hejnicích.
+Odpověď na všechny tyto otázky se dozvíte na snad už tradiční oslavě narozenin v Hejnicích.
 
-Letos budeme mít k dispozici chalupu přímo v obci. Je tam 6 lůžek, moderní koupelna a splachovací záchod. Na zahradě je rovinka, kde by šel případně i postavit stan. [Mrkněte na fotky](https://www.e-chalupy.cz/ubytovani-hejnice-u-zamberka-chalupa-pronajem-o10675).
+Letos budeme mít k dispozici chalupu přímo v obci. Je tam 6 míst na spaní, moderní koupelna a splachovací záchod. Na zahradě je rovinka, kde by šel případně i postavit stan. [Mrkněte na fotky](https://www.e-chalupy.cz/ubytovani-hejnice-u-zamberka-chalupa-pronajem-o10675).
 
 Přijďte na chvilku anebo na celý víkend. Pokud budete chtít přespat v chalupě a finanční situace vám to dovolí, budu rád za příspěvek na ubytko. Pokud budete chtít vzít děti anebo pejska, dejte mi vědět.
 
@@ -39,12 +39,12 @@ Přijďte na chvilku anebo na celý víkend. Pokud budete chtít přespat v chal
 - návrat domů
 
 <div class="photo-strip" aria-label="Fotky z Hejnic">
-  <img data-src="photo-01.webp" alt="Fotka z Hejnic" loading="lazy" decoding="async">
-  <img data-src="photo-02.webp" alt="Fotka z Hejnic" loading="lazy" decoding="async">
-  <img data-src="photo-03.webp" alt="Fotka z Hejnic" loading="lazy" decoding="async">
-  <img data-src="photo-04.webp" alt="Fotka z Hejnic" loading="lazy" decoding="async">
-  <img data-src="photo-05.webp" alt="Fotka z Hejnic" loading="lazy" decoding="async">
-  <img data-src="photo-06.webp" alt="Fotka z Hejnic" loading="lazy" decoding="async">
+  <img src="events/narozeniny-2026/photo-01.webp" alt="Fotka z Hejnic" loading="lazy" decoding="async">
+  <img src="events/narozeniny-2026/photo-02.webp" alt="Fotka z Hejnic" loading="lazy" decoding="async">
+  <img src="events/narozeniny-2026/photo-03.webp" alt="Fotka z Hejnic" loading="lazy" decoding="async">
+  <img src="events/narozeniny-2026/photo-04.webp" alt="Fotka z Hejnic" loading="lazy" decoding="async">
+  <img src="events/narozeniny-2026/photo-05.webp" alt="Fotka z Hejnic" loading="lazy" decoding="async">
+  <img src="events/narozeniny-2026/photo-06.webp" alt="Fotka z Hejnic" loading="lazy" decoding="async">
 </div>
 
 ## Co s sebou?

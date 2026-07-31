@@ -5,12 +5,16 @@ const { event } = Astro.props;
 const { Content } = await event.render();
 const contact = event.data.contact;
 const phoneHref = contact?.phone ? `tel:${contact.phone.replace(/\s/g, "")}` : undefined;
+const baseUrl = import.meta.env.BASE_URL.endsWith("/")
+  ? import.meta.env.BASE_URL
+  : `${import.meta.env.BASE_URL}/`;
 ---
 
 <html lang="cs">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <base href={baseUrl} />
     <title>{event.data.title}</title>
   </head>
 
@@ -63,7 +67,6 @@ const phoneHref = contact?.phone ? `tel:${contact.phone.replace(/\s/g, "")}` : u
 
     <script>
       import "../scripts/signup.js";
-      import "../scripts/photo-strip.js";
     </script>
   </body>
 </html>
