@@ -16,7 +16,14 @@ const phoneHref = contact?.phone ? `tel:${contact.phone.replace(/\s/g, "")}` : u
 
   <body class={`theme-${event.data.theme}`}>
     <h1>{event.data.title}</h1>
-    <p class="muted">{event.data.date} • {event.data.time} • {event.data.location}</p>
+    <p class="muted">
+      {event.data.date} • {event.data.time} •
+      {event.data.locationUrl ? (
+        <a href={event.data.locationUrl} target="_blank" rel="noreferrer">{event.data.location}</a>
+      ) : (
+        event.data.location
+      )}
+    </p>
     <Content />
 
     <div>

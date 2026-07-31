@@ -15,6 +15,7 @@ body {
   min-height: 100vh;
   color: #fff;
   font-size: 16px;
+  overflow-x: hidden;
 }
 
 body.theme-late-summer {
@@ -215,6 +216,42 @@ h2 {
   color: #53636a;
   font-size: 0.95rem;
   line-height: 1.5;
+}
+
+.photo-strip {
+  box-sizing: border-box;
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  width: 100vw;
+  max-width: 100vw;
+  margin: 28px 0 40px calc(50% - 50vw);
+  padding: 4px 20px 12px;
+  overflow-x: auto;
+  scroll-snap-type: x proximity;
+}
+
+.photo-strip img {
+  flex: 0 0 240px;
+  width: 240px;
+  height: 170px;
+  object-fit: cover;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.16);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.18);
+  scroll-snap-align: start;
+}
+
+@media (max-width: 560px) {
+  .photo-strip {
+    justify-content: flex-start;
+  }
+
+  .photo-strip img {
+    flex-basis: 72vw;
+    width: 72vw;
+    height: 210px;
+  }
 }
 
 .participants-grid {

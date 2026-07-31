@@ -5,6 +5,7 @@ endDate: 2026-09-20
 date: 18. až 20. září 2026
 time: "od pátku do neděle"
 location: U lavičky, Hejnice u Žamberka
+locationUrl: https://mapy.com/s/dunugocefa
 theme: late-summer
 contact:
   email: radek.dobrovolny@gmail.com
@@ -36,6 +37,15 @@ Přijďte na chvilku anebo na celý víkend. Pokud budete chtít přespat v chal
 ### Neděle
 - rozloučení s lesem
 - návrat domů
+
+<div class="photo-strip" aria-label="Fotky z Hejnic">
+  <img src="narozeniny-2026/photo-01.webp" alt="Fotka z Hejnic" loading="lazy" decoding="async">
+  <img src="narozeniny-2026/photo-02.webp" alt="Fotka z Hejnic" loading="lazy" decoding="async">
+  <img src="narozeniny-2026/photo-03.webp" alt="Fotka z Hejnic" loading="lazy" decoding="async">
+  <img src="narozeniny-2026/photo-04.webp" alt="Fotka z Hejnic" loading="lazy" decoding="async">
+  <img src="narozeniny-2026/photo-05.webp" alt="Fotka z Hejnic" loading="lazy" decoding="async">
+  <img src="narozeniny-2026/photo-06.webp" alt="Fotka z Hejnic" loading="lazy" decoding="async">
+</div>
 
 ## Co s sebou?
 - jídlo a pití bude zajištěné, ale pokud upečete buchtu, slané šneky anebo vezmete láhev kompotu či domácího šnapsu, rádi ochutnáme
