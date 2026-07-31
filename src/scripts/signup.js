@@ -7,11 +7,13 @@ const form = document.getElementById("signup-form");
 const list = document.getElementById("participants");
 const msg = document.getElementById("msg");
 const input = document.getElementById("name");
+const eventSlug = form.dataset.eventSlug;
 
 async function loadParticipants() {
   try {
     const records = await pb.collection("participants").getFullList({
       sort: "-created",
+      filter: pb.filter("eventSlug = {:eventSlug}", { eventSlug }),
       fields: "id,name,created",
     });
     render(records);
@@ -44,7 +46,7 @@ form.addEventListener("submit", async (e) => {
   }
 
   try {
-    await pb.collection("participants").create({ name });
+    await pb.collection("participants").create({ name, eventSlug });
     await loadParticipants();
     input.value = "";
     input.focus();

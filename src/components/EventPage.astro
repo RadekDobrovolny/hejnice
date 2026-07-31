@@ -1,0 +1,61 @@
+---
+import "../styles/global.css";
+
+const { event } = Astro.props;
+const { Content } = await event.render();
+const contact = event.data.contact;
+const phoneHref = contact?.phone ? `tel:${contact.phone.replace(/\s/g, "")}` : undefined;
+---
+
+<html lang="cs">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{event.data.title}</title>
+  </head>
+
+  <body class={`theme-${event.data.theme}`}>
+    <h1>{event.data.title}</h1>
+    <p class="muted">{event.data.date} • {event.data.time} • {event.data.location}</p>
+    <Content />
+
+    <div>
+      <h2>Účastníci</h2>
+      <div id="participants" class="participants-grid"></div>
+    </div>
+
+    {contact && (
+      <div class="contact">
+        <h2>Kontakt</h2>
+        <ul class="contact-list">
+          <li>
+            <a href={`mailto:${contact.email}`}>
+              <span class="emoji">📧</span>
+              {contact.email}
+            </a>
+          </li>
+          <li>
+            <a href={phoneHref}>
+              <span class="emoji">📱</span>
+              {contact.phone}
+            </a>
+          </li>
+        </ul>
+      </div>
+    )}
+
+    <div class="card">
+      <h2>Přihlášení</h2>
+      <form id="signup-form" data-event-slug={event.slug}>
+        <input id="name" name="name" placeholder="Tvoje jméno" minlength="2" maxlength="60" required />
+        <button type="submit">Přihlásit</button>
+      </form>
+      <p id="msg" class="error" aria-live="polite"></p>
+      <p class="note">Rozmyslel*a sis to? Napiš Radkovi, odebere tě</p>
+    </div>
+
+    <script>
+      import "../scripts/signup.js";
+    </script>
+  </body>
+</html>

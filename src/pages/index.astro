@@ -1,40 +1,63 @@
 ---
 import "../styles/global.css";
-import { getEntry } from "astro:content";
+import { getCollection } from "astro:content";
 
-const event = await getEntry("events", "meetup");
-const { Content } = await event.render();
+const events = await getCollection("events");
+const today = new Date();
+today.setHours(0, 0, 0, 0);
+
+const sortedEvents = events.sort(
+  (a, b) => b.data.startDate.getTime() - a.data.startDate.getTime(),
+);
+
+const upcomingEvents = sortedEvents.filter((event) => event.data.endDate >= today);
+const pastEvents = sortedEvents.filter((event) => event.data.endDate < today);
+
+const baseUrl = import.meta.env.BASE_URL.endsWith("/")
+  ? import.meta.env.BASE_URL
+  : `${import.meta.env.BASE_URL}/`;
+const eventUrl = (event) => `${baseUrl}events/${event.slug}`;
 ---
 
 <html lang="cs">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>{event.data.title}</title>
+    <title>Hejnice - události</title>
   </head>
 
-  <body>
-    <h1>{event.data.title}</h1>
-    <p class="muted">{event.data.date} • {event.data.time} • {event.data.location}</p>
-    <Content />
+  <body class="theme-index">
+    <h1>Hejnice</h1>
+    <p class="muted">Události u lavičky</p>
 
-    <div>
-      <h2>Účastníci</h2>
-      <div id="participants" class="participants-grid"></div>
-    </div>
+    <main class="events-overview">
+      <section>
+        <h2>Aktuální</h2>
+        <div class="event-list">
+          {upcomingEvents.map((event) => (
+            <a class={`event-card theme-${event.data.theme}`} href={eventUrl(event)}>
+              <span class="event-card__title">{event.data.title}</span>
+              <span class="event-card__meta">
+                {event.data.date} • {event.data.time} • {event.data.location}
+              </span>
+            </a>
+          ))}
+        </div>
+      </section>
 
-    <div class="card">
-      <h2>Přihlášení</h2>
-      <form id="signup-form">
-        <input id="name" name="name" placeholder="Tvoje jméno" minlength="2" maxlength="60" required />
-        <button type="submit">Přihlásit</button>
-      </form>
-      <p id="msg" class="error" aria-live="polite"></p>
-      <p class="note">Rozmyslel*a sis to? Napiš Radkovi, odebere tě</p>
-    </div>
-
-    <script>
-      import "../scripts/signup.js";
-    </script>
+      <section>
+        <h2>Proběhlé</h2>
+        <div class="event-list">
+          {pastEvents.map((event) => (
+            <a class={`event-card theme-${event.data.theme}`} href={eventUrl(event)}>
+              <span class="event-card__title">{event.data.title}</span>
+              <span class="event-card__meta">
+                {event.data.date} • {event.data.time} • {event.data.location}
+              </span>
+            </a>
+          ))}
+        </div>
+      </section>
+    </main>
   </body>
 </html>
