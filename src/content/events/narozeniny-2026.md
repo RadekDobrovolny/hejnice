@@ -39,12 +39,12 @@ Přijďte na chvilku anebo na celý víkend. Pokud budete chtít přespat v chal
 - návrat domů
 
 <div class="photo-strip" aria-label="Fotky z Hejnic">
-  <img src="narozeniny-2026/photo-01.webp" alt="Fotka z Hejnic" loading="lazy" decoding="async">
-  <img src="narozeniny-2026/photo-02.webp" alt="Fotka z Hejnic" loading="lazy" decoding="async">
-  <img src="narozeniny-2026/photo-03.webp" alt="Fotka z Hejnic" loading="lazy" decoding="async">
-  <img src="narozeniny-2026/photo-04.webp" alt="Fotka z Hejnic" loading="lazy" decoding="async">
-  <img src="narozeniny-2026/photo-05.webp" alt="Fotka z Hejnic" loading="lazy" decoding="async">
-  <img src="narozeniny-2026/photo-06.webp" alt="Fotka z Hejnic" loading="lazy" decoding="async">
+  <img data-src="photo-01.webp" alt="Fotka z Hejnic" loading="lazy" decoding="async">
+  <img data-src="photo-02.webp" alt="Fotka z Hejnic" loading="lazy" decoding="async">
+  <img data-src="photo-03.webp" alt="Fotka z Hejnic" loading="lazy" decoding="async">
+  <img data-src="photo-04.webp" alt="Fotka z Hejnic" loading="lazy" decoding="async">
+  <img data-src="photo-05.webp" alt="Fotka z Hejnic" loading="lazy" decoding="async">
+  <img data-src="photo-06.webp" alt="Fotka z Hejnic" loading="lazy" decoding="async">
 </div>
 
 ## Co s sebou?
