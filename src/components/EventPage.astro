@@ -35,6 +35,16 @@ const baseUrl = import.meta.env.BASE_URL.endsWith("/")
       <div id="participants" class="participants-grid"></div>
     </div>
 
+    <div class="card">
+      <h2>Přihlášení</h2>
+      <form id="signup-form" data-event-slug={event.slug}>
+        <input id="name" name="name" placeholder="Tvoje jméno" minlength="2" maxlength="60" required />
+        <button type="submit">Přihlásit</button>
+      </form>
+      <p id="msg" class="error" aria-live="polite"></p>
+      <p class="note">Rozmyslel*a sis to? Napiš Radkovi, odebere tě</p>
+    </div>
+
     {contact && (
       <div class="contact">
         <h2>Kontakt</h2>
@@ -54,16 +64,6 @@ const baseUrl = import.meta.env.BASE_URL.endsWith("/")
         </ul>
       </div>
     )}
-
-    <div class="card">
-      <h2>Přihlášení</h2>
-      <form id="signup-form" data-event-slug={event.slug}>
-        <input id="name" name="name" placeholder="Tvoje jméno" minlength="2" maxlength="60" required />
-        <button type="submit">Přihlásit</button>
-      </form>
-      <p id="msg" class="error" aria-live="polite"></p>
-      <p class="note">Rozmyslel*a sis to? Napiš Radkovi, odebere tě</p>
-    </div>
 
     <script>
       import "../scripts/signup.js";
