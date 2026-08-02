@@ -16,7 +16,7 @@ Kolik měl Alibaba loupežníků v partě? Kolik dní pršelo při biblické pot
 
 Odpověď na všechny tyto otázky se dozvíte na snad už tradiční oslavě narozenin v Hejnicích.
 
-Letos budeme mít k dispozici chalupu přímo v obci. Je tam 6 míst na spaní, moderní koupelna a splachovací záchod. Na zahradě je rovinka, kde by šel případně i postavit stan. [Mrkněte na fotky](https://www.e-chalupy.cz/ubytovani-hejnice-u-zamberka-chalupa-pronajem-o10675).
+Setkání bude klasicky u lavičky a ohniště na hranici lesa a louky. Letos budeme mít k dispozici i chalupu přímo v obci, 650 metrů od lavičky. Je tam 6 míst na spaní, moderní koupelna a splachovací záchod. Na zahradě je rovinka, kde by šel případně i postavit stan. [Mrkněte na fotky](https://www.e-chalupy.cz/ubytovani-hejnice-u-zamberka-chalupa-pronajem-o10675).
 
 Přijďte na chvilku anebo na celý víkend. Pokud budete chtít přespat v chalupě a finanční situace vám to dovolí, budu rád za příspěvek na ubytko. Pokud budete chtít vzít děti anebo pejska, dejte mi vědět.
 
@@ -29,11 +29,12 @@ Jste srdečně zváni a moc se na vás těším! <span class="emoji">❤️</spa
 
 ### Sobota
 - vaření na ohni
+- plný regál dobrot
+- knihobudka
 - kontrola lesa
 - péče o ptačí budky a instalace nových
 - výroba laviček k ohništi
-- knihobudka
-- plný regál dobrot
+- zarovnání terénu na stanování
 - další workshopy budou upřesněny
 
 ### Neděle
@@ -58,5 +59,5 @@ Jste srdečně zváni a moc se na vás těším! <span class="emoji">❤️</spa
 
 ## Doprava
 - <span class="emoji">🚙</span> spolujízda z Olomouce (Radek) nebo Brna (Petr)
-- <span class="emoji">🚂</span> vlakem do Ústí nad Orlicí (pak shuttle)
+- <span class="emoji">🚂</span> vlakem do Ústí nad Orlicí, odtud vás vyzvedeneme autem (párkrát za den tam jezdí i autobus)
 - <span class="emoji">🚗</span> vlastním autem, na parkování je místa dost
