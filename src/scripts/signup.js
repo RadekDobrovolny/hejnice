@@ -29,7 +29,9 @@ function hash(value) {
 function assignAvatars(participants) {
   const assignments = new Map();
   const usedIndexes = new Set();
-  const sortedParticipants = [...participants].sort((a, b) => a.id.localeCompare(b.id));
+  const sortedParticipants = [...participants].sort(
+    (a, b) => a.created.localeCompare(b.created) || a.id.localeCompare(b.id),
+  );
 
   for (const participant of sortedParticipants) {
     const preferredIndex = hash(participant.id) % avatarUrls.length;
