@@ -60,7 +60,12 @@ Jste srdečně zváni a moc se na vás těším! <span class="emoji">❤️</spa
 - hudební nástroje a zpěvníky
 - námět na workshop? sem s ním!
 
+## Dárek
+Největší dárek pro mě bude, když přijede a strávíme společný čas. Taky mi udělá radost pomoc v lese, při vaření, stavění, tvoření, uklízení a tak. To bohatě stačí.
+
+Kdybyste i přesto měli neutuchající potřebu mi dát něco fyzického tak mám rád [kovové krabičky](https://www.tokyotools.cz/atelier-organizace/), [kávu z malých pražíren](https://www.kofio.cz/kava/filtr/lokalni-prazirny-kavy/) a sbírám [zpěvníky](https://www.luxor.cz/c/9984/knihy-naucna-literatura-zpevniky-a-akordy).
+
 ## Doprava
-- <span class="emoji">🚙</span> spolujízda z Olomouce (Radek) nebo Brna (Petr)
-- <span class="emoji">🚂</span> vlakem do Ústí nad Orlicí, odtud vás vyzvedeneme autem (párkrát za den tam jezdí i autobus)
-- <span class="emoji">🚗</span> vlastním autem, na parkování je místa dost
+- <span class="emoji">🚙</span> spolujízda z Prahy, Olomouce (Radek) nebo Brna (Petr K., Šimon K.)
+- <span class="emoji">🚂</span> vlakem do Ústí nad Orlicí, odtud vás vyzvedeneme (párkrát za den tam jezdí i autobus)
+- <span class="emoji">🚲</span> na kole či autem, na parkování je místa dost
