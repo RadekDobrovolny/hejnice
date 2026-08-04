@@ -20,14 +20,39 @@ const baseUrl = import.meta.env.BASE_URL.endsWith("/")
 
   <body class={`theme-${event.data.theme}`}>
     <h1>{event.data.title}</h1>
-    <p class="muted">
-      {event.data.date} • {event.data.time} •
-      {event.data.locationUrl ? (
-        <a href={event.data.locationUrl} target="_blank" rel="noreferrer">{event.data.location}</a>
-      ) : (
-        event.data.location
+    <section class="event-details" aria-label="Základní informace o události">
+      <div class="event-detail">
+        <img class="event-detail__icon" src={`${baseUrl}icons/kalendar.png`} alt="" />
+        <div>
+          <h2 class="event-detail__title">Kdy</h2>
+          <p>{event.data.date}<br />{event.data.time}</p>
+        </div>
+      </div>
+
+      <div class="event-detail">
+        <img class="event-detail__icon" src={`${baseUrl}icons/mapa.png`} alt="" />
+        <div>
+          <h2 class="event-detail__title">Kde</h2>
+          <p>
+            {event.data.locationUrl ? (
+              <a href={event.data.locationUrl} target="_blank" rel="noreferrer">{event.data.location}</a>
+            ) : (
+              event.data.location
+            )}
+          </p>
+        </div>
+      </div>
+
+      {event.data.accommodation && (
+        <div class="event-detail">
+          <img class="event-detail__icon" src={`${baseUrl}icons/stan.png`} alt="" />
+          <div>
+            <h2 class="event-detail__title">Spaní</h2>
+            <p>{event.data.accommodation.map((line) => <span>{line}</span>)}</p>
+          </div>
+        </div>
       )}
-    </p>
+    </section>
     <Content />
 
     <div>

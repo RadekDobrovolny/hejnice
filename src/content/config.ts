@@ -10,6 +10,7 @@ const events = defineCollection({
     time: z.string(),
     location: z.string(),
     locationUrl: z.string().url().optional(),
+    accommodation: z.array(z.string()).optional(),
     theme: z.enum(['winter', 'late-summer']).default('winter'),
     contact: z.object({
       email: z.string(),

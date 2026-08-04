@@ -2,10 +2,13 @@
 title: Narozeniny v Hejnicích 2026
 startDate: 2026-09-18
 endDate: 2026-09-20
-date: 18. až 20. září 2026
+date: 18. až 20. září
 time: "od pátku do neděle"
 location: U lavičky, Hejnice u Žamberka
 locationUrl: https://mapy.com/s/dunugocefa
+accommodation:
+  - 6 míst v chalupě
+  - + stanování
 theme: late-summer
 contact:
   email: radek.dobrovolny@gmail.com
