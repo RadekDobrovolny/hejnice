@@ -66,7 +66,7 @@ Největší dárek pro mě bude, když přijede a strávíme společný čas. Ta
 Kdybyste i přesto měli neutuchající potřebu mi dát něco fyzického tak mám rád [kovové krabičky](https://www.tokyotools.cz/atelier-organizace/), [kávu z malých pražíren](https://www.kofio.cz/kava/filtr/lokalni-prazirny-kavy/) a sbírám [zpěvníky](https://www.luxor.cz/c/9984/knihy-naucna-literatura-zpevniky-a-akordy).
 
 ## Doprava
-- <span class="emoji">🚙</span> spolujízda z Prahy, Olomouce (Radek) nebo Brna (Petr K., Šimon K.)
+- <span class="emoji">🚙</span> spolujízda z Prahy (WW), Olomouce (Radek) nebo Brna (Petr K., Šimon)
 - <span class="emoji">🚂</span> vlakem do Ústí nad Orlicí, odtud vás vyzvedeneme (párkrát za den tam jezdí i autobus)
 - <span class="emoji">🚲</span> na kole či autem, na parkování je místa dost
 
@@ -76,4 +76,5 @@ Kdybyste i přesto měli neutuchající potřebu mi dát něco fyzického tak m�
 | --- | --- | --- |
 | <span class="accommodation-place"><img src="icons/postel.png" alt="">1. ložnice</span> | <span class="accommodation-guest" data-participant-name="WW+L">WW+L</span> | <span class="accommodation-guest" data-participant-name="WW+L">WW+L</span> |
 | <span class="accommodation-place"><img src="icons/postel.png" alt="">2. ložnice</span> | <span class="accommodation-guest" data-participant-name="Petr K.">Petr K.</span><span class="accommodation-availability">3 místa volná</span> | <span class="accommodation-guest" data-participant-name="Petr K.">Petr K.</span><span class="accommodation-availability">3 místa volná</span> |
-| <span class="accommodation-place"><img src="icons/stan.png" alt="">Stany</span> | <span class="accommodation-guest" data-participant-name="Radek D.">Radek D.</span> | <span class="accommodation-guest" data-participant-name="Radek D.">Radek D.</span> |
+| <span class="accommodation-place"><img src="icons/stan.png" alt="">Stan Hacienda (2+2+2 místa)</span> | <span class="accommodation-availability">6 volných míst</span> | <span class="accommodation-availability">6 volných míst</span> |
+| <span class="accommodation-place"><img src="icons/stan.png" alt="">Vlastní stany</span> | <span class="accommodation-guest" data-participant-name="Radek D.">Radek D.</span> | <span class="accommodation-guest" data-participant-name="Radek D.">Radek D.</span> |
