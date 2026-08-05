@@ -1,6 +1,5 @@
 ---
 import { getCollection } from "astro:content";
-import EventPage from "../../components/EventPage.astro";
 
 export async function getStaticPaths() {
   const events = await getCollection("events");
@@ -12,6 +11,25 @@ export async function getStaticPaths() {
 }
 
 const { event } = Astro.props;
+const redirectUrl = new URL(`/${event.slug}/`, Astro.site).href;
 ---
 
-<EventPage event={event} />
+<html lang="cs">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex" />
+    <meta http-equiv="refresh" content={`0;url=${redirectUrl}`} />
+    <link rel="canonical" href={redirectUrl} />
+    <title>Událost byla přesunuta</title>
+  </head>
+  <body>
+    <p>Událost byla přesunuta na <a href={redirectUrl}>{redirectUrl}</a>.</p>
+    <script is:inline define:vars={{ redirectUrl }}>
+      const target = new URL(redirectUrl);
+      target.search = window.location.search;
+      target.hash = window.location.hash;
+      window.location.replace(target);
+    </script>
+  </body>
+</html>
