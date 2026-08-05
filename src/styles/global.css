@@ -209,6 +209,156 @@ ul ul {
   list-style: circle;
 }
 
+table {
+  width: 100%;
+  margin: 16px 0 32px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  color: #263238;
+}
+
+th,
+td {
+  padding: 12px 16px;
+  border-bottom: 1px solid rgba(38, 50, 56, 0.14);
+  text-align: left;
+}
+
+th {
+  color: var(--accent);
+  font-weight: 700;
+  background: rgba(255, 255, 255, 0.22);
+}
+
+th:not(:first-child),
+td:not(:first-child) {
+  width: 28%;
+  border-left: 1px solid rgba(38, 50, 56, 0.14);
+  text-align: center;
+}
+
+tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+#ubytování + table {
+  border-color: rgba(79, 91, 48, 0.72);
+  background: rgba(238, 244, 220, 0.62);
+  box-shadow: 0 8px 24px rgba(35, 54, 27, 0.24);
+  backdrop-filter: blur(10px);
+}
+
+#ubytování + table th {
+  border-bottom: 2px solid rgba(48, 88, 52, 0.45);
+  background: rgba(48, 88, 52, 0.78);
+  color: #fff;
+}
+
+#ubytování + table th:not(:first-child) {
+  border-left-color: rgba(255, 255, 255, 0.2);
+}
+
+#ubytování + table td {
+  border-bottom-color: rgba(61, 85, 47, 0.24);
+}
+
+#ubytování + table td:not(:first-child) {
+  border-left-color: rgba(61, 85, 47, 0.2);
+}
+
+#ubytování + table tbody tr:nth-child(even) {
+  background: rgba(111, 139, 66, 0.14);
+}
+
+#ubytování + table td:first-child {
+  color: #294b2d;
+  font-weight: 600;
+}
+
+.accommodation-place {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.accommodation-place img {
+  flex: 0 0 34px;
+  width: 34px;
+  height: 34px;
+  object-fit: contain;
+}
+
+.accommodation-guest {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  white-space: nowrap;
+}
+
+.accommodation-avatar {
+  display: inline-flex;
+  flex: 0 0 32px;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.14);
+}
+
+.accommodation-avatar__image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.accommodation-availability {
+  display: block;
+  margin-top: 4px;
+  color: #2d6a3b;
+  font-size: 0.72rem;
+  font-weight: 700;
+  line-height: 1.25;
+  text-align: center;
+}
+
+@media (max-width: 560px) {
+  #ubytování + table th,
+  #ubytování + table td {
+    padding: 8px 6px;
+    font-size: 0.78rem;
+  }
+
+  .accommodation-place {
+    gap: 4px;
+  }
+
+  .accommodation-place img {
+    flex-basis: 26px;
+    width: 26px;
+    height: 26px;
+  }
+
+  .accommodation-guest {
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .accommodation-avatar {
+    flex-basis: 28px;
+    width: 28px;
+    height: 28px;
+  }
+}
+
 li:has(> .emoji) {
   list-style: none;
 }

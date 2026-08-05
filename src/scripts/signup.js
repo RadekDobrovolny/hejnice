@@ -49,6 +49,35 @@ function assignAvatars(participants) {
   return assignments;
 }
 
+function renderAccommodationAvatars(participants, participantAvatars) {
+  const participantsByName = new Map(participants.map((participant) => [participant.name, participant]));
+
+  for (const guest of document.querySelectorAll("[data-participant-name]")) {
+    guest.querySelector(".accommodation-avatar")?.remove();
+
+    const participant = participantsByName.get(guest.dataset.participantName);
+    const avatarUrl = participant && participantAvatars.get(participant.id);
+    if (!avatarUrl) {
+      continue;
+    }
+
+    const avatar = document.createElement("span");
+    avatar.className = "accommodation-avatar";
+
+    const image = document.createElement("img");
+    image.className = "accommodation-avatar__image";
+    image.src = avatarUrl;
+    image.alt = "";
+    image.width = 32;
+    image.height = 32;
+    image.decoding = "async";
+    image.addEventListener("error", () => avatar.remove());
+
+    avatar.appendChild(image);
+    guest.prepend(avatar);
+  }
+}
+
 async function loadParticipants() {
   try {
     const records = await pb.collection("participants").getFullList({
@@ -99,6 +128,8 @@ function render(participants) {
     div.append(avatar, name);
     list.appendChild(div);
   }
+
+  renderAccommodationAvatars(participants, participantAvatars);
 }
 
 form.addEventListener("submit", async (e) => {
