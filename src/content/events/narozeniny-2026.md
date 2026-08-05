@@ -70,7 +70,6 @@ Kdybyste i přesto měli neutuchající potřebu mi dát něco fyzického tak m�
 - <span class="emoji">🚂</span> vlakem do Ústí nad Orlicí, odtud vás vyzvedeneme (párkrát za den tam jezdí i autobus)
 - <span class="emoji">🚲</span> na kole či autem, na parkování je místa dost
 
-<!--
 ## Ubytování
 
 | Místo | Pátek | Sobota |
@@ -78,4 +77,3 @@ Kdybyste i přesto měli neutuchající potřebu mi dát něco fyzického tak m�
 | <span class="accommodation-place"><img src="icons/postel.png" alt="">1. ložnice</span> | <span class="accommodation-guest" data-participant-name="WW+L">WW+L</span> | <span class="accommodation-guest" data-participant-name="WW+L">WW+L</span> |
 | <span class="accommodation-place"><img src="icons/postel.png" alt="">2. ložnice</span> | <span class="accommodation-guest" data-participant-name="Petr K.">Petr K.</span><span class="accommodation-availability">3 místa volná</span> | <span class="accommodation-guest" data-participant-name="Petr K.">Petr K.</span><span class="accommodation-availability">3 místa volná</span> |
 | <span class="accommodation-place"><img src="icons/stan.png" alt="">Stany</span> | <span class="accommodation-guest" data-participant-name="Radek D.">Radek D.</span> | <span class="accommodation-guest" data-participant-name="Radek D.">Radek D.</span> |
--->
