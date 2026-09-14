@@ -15,7 +15,7 @@ contact:
   phone: "+420 723 879 213"
 ---
 
-Kolik měl Alibaba loupežníků v partě? Kolik dní pršelo při biblické potopě? Kolik procent má prémiový eidam? Kolik týdnů trvá průměrné těhotenství? Jaké protonové číslo má zirkonium? Kolik dní kape Medardova kápě? A co Římané viděli za písmeny XL?
+Kolik měl Alibaba loupežníků v partě? Kolik dní pršelo při biblické potopě? Kolik týdnů trvá průměrné těhotenství? Jaké protonové číslo má zirkonium? Kolik dní kape Medardova kápě? A co Římané viděli za písmeny XL?
 
 Odpověď na všechny tyto otázky se dozvíte na snad už tradiční oslavě narozenin v Hejnicích.
 
@@ -28,17 +28,39 @@ Jste srdečně zváni a moc se na vás těším! <span class="emoji">❤️</spa
 ## Program
 
 ### Pátek (od 17:00)
-- posezení u ohně, opékání, povídání a zpívání
+- stavění stanů
+- přípravy na sobotu
+- lavičky k ohništi
+- oheň, opékání, povídání a zpívání
 
 ### Sobota
+- dopoledne
+  - instalace a křest knihobudky
+  - ptačí budky: kontrola a vyčištění
+- odpoledne
+  - Ignite: krátká povídání o tom, co máte rádi (5-10 minut)
+
+| Lesní minikonference Ignite                                                                    | Téma                             |
+|------------------------------------------------------------------------------------------------|----------------------------------|
+| <span class="ignite-speaker" data-participant-name="Majda B."><span>Majda B.</span></span>     | Vyprávění a pábení               |
+| <span class="ignite-speaker" data-participant-name="Petr K."><span>Petr K.</span></span>       | <span class="emoji" role="img" aria-label="Kolo">🚲</span> |
+| <span class="ignite-speaker" data-participant-name="Tatiana K."><span>Tatiana K.</span></span> | Šamanské praktiky prebrané vedou |
+| <span class="ignite-speaker" data-participant-name="Petr Šky."><span>Petr Šky.</span></span>   | Toulání krajinou a kešky         |
+| <span class="ignite-speaker" data-participant-name="Hanuš D."><span>Hanuš D.</span></span>     | Včelaření                        |
+| <span class="ignite-speaker" data-participant-name="Hanka D."><span>Hanka D.</span></span>     | Kam teče Morava?                 |
+| ... prostor pro Tebe                                                                           | dej mi vědět                     |
+
+- večer
+  - pohodička
 - vaření na ohni
+  - Radkův hovězí guláš
+  - portobello/maso burgery na grilu
+  - vegan menu bude brzy
+  - oštěpok, hermelín, tofu, špekáčky na opékání
+  - kafe a čaj
 - plný regál dobrot
-- knihobudka
-- kontrola lesa
-- péče o ptačí budky a instalace nových
-- výroba laviček k ohništi
-- zarovnání terénu na stanování
-- další workshopy budou upřesněny
+  - pivo, víno, mošt, limča, nealko, minerálka
+  - sladký
 
 ### Neděle
 - rozloučení s lesem
@@ -75,6 +97,6 @@ Kdybyste i přesto měli neutuchající potřebu mi dát něco fyzického tak m�
 | Místo | Pátek | Sobota |
 | --- | --- | --- |
 | <span class="accommodation-place"><img src="icons/postel.png" alt="">1. ložnice</span> | <span class="accommodation-guest" data-participant-name="WW+L">WW+L</span> | <span class="accommodation-guest" data-participant-name="WW+L">WW+L</span> |
-| <span class="accommodation-place"><img src="icons/postel.png" alt="">2. ložnice</span> | <span class="accommodation-guest" data-participant-name="Petr K.">Petr K.</span><span class="accommodation-availability">3 místa volná</span> | <span class="accommodation-guest" data-participant-name="Petr K.">Petr K.</span><span class="accommodation-availability">3 místa volná</span> |
-| <span class="accommodation-place"><img src="icons/stan.png" alt="">Stan Hacienda (2+2+2 místa)</span> | <span class="accommodation-availability">6 volných míst</span> | <span class="accommodation-availability">6 volných míst</span> |
+| <span class="accommodation-place"><img src="icons/postel.png" alt="">2. ložnice</span> | <span class="accommodation-guest" data-participant-name="Petr K.">Petr K.</span><span class="accommodation-availability">3 místa volná</span> | <span class="accommodation-guest" data-participant-name="Petr K.">Petr K.</span><span class="accommodation-guest" data-participant-name="Hanka D.">Hanka D.</span><span class="accommodation-availability">2 místa volná</span> |
+| <span class="accommodation-place"><img src="icons/stan.png" alt="">Stan Hacienda (2+2+2 místa)</span> | <span class="accommodation-guest accommodation-guest--nowrap" data-participant-name="Honza D.">Honza D. + 2 chábři</span><span class="accommodation-availability">3 místa volná</span> | <span class="accommodation-guest accommodation-guest--nowrap" data-participant-name="Honza D.">Honza D. + 2 chábři</span><span class="accommodation-availability">3 místa volná</span> |
 | <span class="accommodation-place"><img src="icons/stan.png" alt="">Vlastní stany</span> | <span class="accommodation-guest" data-participant-name="Radek D.">Radek D.</span> | <span class="accommodation-guest" data-participant-name="Radek D.">Radek D.</span> |

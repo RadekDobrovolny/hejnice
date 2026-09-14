@@ -209,6 +209,19 @@ ul ul {
   list-style: circle;
 }
 
+#program ~ ul:has(~ #co-s-sebou) li {
+  padding-block: 1px;
+  line-height: 1.5;
+}
+
+#program ~ ul:has(~ #co-s-sebou) li > p {
+  margin-block: 0;
+}
+
+#program ~ ul:has(~ #co-s-sebou) ul {
+  margin-top: 2px;
+}
+
 table {
   width: 100%;
   margin: 16px 0 32px;
@@ -246,38 +259,64 @@ tbody tr:last-child td {
   border-bottom: 0;
 }
 
-#ubytování + table {
+#ubytování + table,
+table:has(.ignite-speaker) {
+  table-layout: fixed;
   border-color: rgba(79, 91, 48, 0.72);
   background: rgba(238, 244, 220, 0.62);
   box-shadow: 0 8px 24px rgba(35, 54, 27, 0.24);
   backdrop-filter: blur(10px);
 }
 
-#ubytování + table th {
+#ubytování + table th,
+table:has(.ignite-speaker) th {
   border-bottom: 2px solid rgba(48, 88, 52, 0.45);
   background: rgba(48, 88, 52, 0.78);
   color: #fff;
 }
 
-#ubytování + table th:not(:first-child) {
+#ubytování + table th:not(:first-child),
+table:has(.ignite-speaker) th:not(:first-child) {
   border-left-color: rgba(255, 255, 255, 0.2);
 }
 
-#ubytování + table td {
+#ubytování + table td,
+table:has(.ignite-speaker) td {
   border-bottom-color: rgba(61, 85, 47, 0.24);
 }
 
-#ubytování + table td:not(:first-child) {
+#ubytování + table td:not(:first-child),
+table:has(.ignite-speaker) td:not(:first-child) {
   border-left-color: rgba(61, 85, 47, 0.2);
 }
 
-#ubytování + table tbody tr:nth-child(even) {
+#ubytování + table tbody tr:nth-child(even),
+table:has(.ignite-speaker) tbody tr:nth-child(even) {
   background: rgba(111, 139, 66, 0.14);
 }
 
-#ubytování + table td:first-child {
+#ubytování + table td:first-child,
+table:has(.ignite-speaker) td:first-child {
   color: #294b2d;
   font-weight: 600;
+}
+
+table:has(.ignite-speaker) th:not(:first-child),
+table:has(.ignite-speaker) td:not(:first-child) {
+  width: 58%;
+  text-align: left;
+  overflow-wrap: anywhere;
+}
+
+.ignite-speaker {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.ignite-speaker > span:last-child {
+  min-width: 0;
+  overflow-wrap: anywhere;
 }
 
 .accommodation-place {
@@ -294,10 +333,18 @@ tbody tr:last-child td {
 }
 
 .accommodation-guest {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: center;
   gap: 6px;
+  white-space: normal;
+}
+
+.accommodation-guest + .accommodation-guest {
+  margin-top: 4px;
+}
+
+.accommodation-guest--nowrap {
   white-space: nowrap;
 }
 
@@ -332,7 +379,9 @@ tbody tr:last-child td {
 
 @media (max-width: 560px) {
   #ubytování + table th,
-  #ubytování + table td {
+  #ubytování + table td,
+  table:has(.ignite-speaker) th,
+  table:has(.ignite-speaker) td {
     padding: 8px 6px;
     font-size: 0.78rem;
   }
